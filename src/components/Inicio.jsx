@@ -17,14 +17,13 @@ export const Inicio = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I create stellar web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
+            Crio sistemas eficientes e escaláveis. Embora meu maior 
+            projeto seja em front-end, meu foco está em desenvolver soluções sólidas de back-end.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
-              View My Work
+            <a href="#projetos" className="cosmic-button">
+              Veja meu trabalho
             </a>
           </div>
         </div>

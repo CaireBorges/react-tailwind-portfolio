@@ -4,39 +4,39 @@ import { cn } from "@/lib/utils";
 const skills = [
   // Frontend
   { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "JavaScript", level: 75, category: "frontend" },
+  { name: "React", level: 75, category: "frontend" },
+  { name: "TypeScript", level: 42, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
+  { name: "Next.js", level: 40, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "Node.js", level: 60, category: "backend" },
+  { name: "Java", level: 70, category: "backend" },
+  { name: "C", level: 60, category: "backend" },
+  { name: "Golang", level: 50, category: "backend" },
+  { name: "MySql", level: 90, category: "backend" },
 
-  // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  // ferramentas
+  { name: "Git/GitHub", level: 90, category: "ferramentas" },
+  { name: "Docker", level: 20, category: "ferramentas" },
+  { name: "Figma", level: 50, category: "ferramentas" },
+  { name: "VS Code", level: 95, category: "ferramentas" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["tudo", "frontend", "backend", "ferramentas"];
 
 export const Competencias = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("tudo");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "tudo" || skill.category === activeCategory
   );
   return (
     <section id="competencias" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+          Minhas <span className="text-primary"> Competências</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">

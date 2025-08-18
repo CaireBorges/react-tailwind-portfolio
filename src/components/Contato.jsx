@@ -23,8 +23,8 @@ export const Contato = () => {
 
     setTimeout(() => {
       toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: "Mensagem Enviada!",
+        description: "Obrigado por entrar em contato! Logo responderei.",
       });
       setIsSubmitting(false);
     }, 1500);
@@ -33,19 +33,19 @@ export const Contato = () => {
     <section id="contato" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+          Entre em <span className="text-primary"> Contato</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          Tem algum projeto em mente ou quer colaborar?
+           Fique à vontade para entrar em contato. Estou sempre aberto a discutir novas oportunidades.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">
               {" "}
-              Contact Information
+              Informações de contato
             </h3>
 
             <div className="space-y-6 justify-center">
@@ -56,10 +56,10 @@ export const Contato = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:caireborges99@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    caireborges99@gmail.com
                   </a>
                 </div>
               </div>
@@ -68,12 +68,12 @@ export const Contato = () => {
                   <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Phone</h4>
+                  <h4 className="font-medium"> Whatsapp</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+5598970149559"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +55 (98) 97014-9559
                   </a>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export const Contato = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    São Luís, MA, Brasil
                   </a>
                 </div>
               </div>
@@ -93,13 +93,13 @@ export const Contato = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/in/cairê-b-7b041026a" target="_blank">
                   <Linkedin />
                 </a>
                 <a href="#" target="_blank">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/little._.bla" target="_blank">
                   <Instagram />
                 </a>
                 <a href="#" target="_blank">
@@ -113,7 +113,7 @@ export const Contato = () => {
             className="bg-card p-8 rounded-lg shadow-xs"
             onSubmit={handleSubmit}
           >
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6"> Envie uma mensagem</h3>
 
             <form className="space-y-6">
               <div>
@@ -122,7 +122,7 @@ export const Contato = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Name
+                  Seu nome
                 </label>
                 <input
                   type="text"
@@ -130,7 +130,7 @@ export const Contato = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Cairê Borges..."
                 />
               </div>
 
@@ -140,7 +140,7 @@ export const Contato = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Email
+                  Seu email
                 </label>
                 <input
                   type="email"
@@ -148,7 +148,7 @@ export const Contato = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="jotinha@gmail.com"
                 />
               </div>
 
@@ -158,14 +158,14 @@ export const Contato = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Message
+                  Sua mensagem
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  placeholder="Ola, gostaria de falar sobre..."
                 />
               </div>
 
@@ -176,7 +176,7 @@ export const Contato = () => {
                   "cosmic-button w-full flex items-center justify-center gap-2"
                 )}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Enviando..." : "Enviar mensagem"}
                 <Send size={16} />
               </button>
             </form>
