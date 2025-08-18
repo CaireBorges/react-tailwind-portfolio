@@ -42,17 +42,17 @@ export const Competencias = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button
-              key={key}
-              onClick={() => setActiveCategory(category)}
-              className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                activeCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
-              )}
-            >
-              {category}
-            </button>
+  key={key}
+  onClick={() => setActiveCategory(category)}
+  className={cn(
+    "px-5 py-2 rounded-full capitalize hover-effect",
+    activeCategory === category
+      ? "bg-primary text-primary-foreground"
+      : "bg-secondary/70 text-foreground"
+  )}
+>
+  {category}
+</button>
           ))}
         </div>
 
