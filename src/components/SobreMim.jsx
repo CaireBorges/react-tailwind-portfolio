@@ -18,7 +18,7 @@ export const SobreMim = () => {
             <p className="text-muted-foreground">
               Estudo desenvolvimento web há 2 anos e meu foco
               é entregar sites acessíveis e responsivos usando tecnologias modernas.
-            </p>
+            </p> 
 
             <p className="text-muted-foreground">
               Sou apaixonado em criar soluções elegantes para problemas complexos,

@@ -7,7 +7,7 @@ const projects = [
     description: "Simples Landing page usando css e html",
     image: "/Landing.png",
     tags: ["Html", "CSS"],
-    demoUrl: "#",
+    demoUrl: "https://desafio2-trilhas.vercel.app",
     githubUrl: "#",
   },
   // {

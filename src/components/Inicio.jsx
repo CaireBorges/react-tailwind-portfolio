@@ -17,8 +17,7 @@ export const Inicio = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Crio sistemas eficientes e escaláveis. Embora meu maior 
-            projeto seja em front-end, meu foco está em desenvolver soluções sólidas de back-end.
+            Crio sistemas eficientes e escaláveis. Sou um desenvolvedor front-end, entretanto meu foco agora está em desenvolver soluções sólidas no back-end.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

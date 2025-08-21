@@ -3,25 +3,22 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 75, category: "frontend" },
-  { name: "React", level: 75, category: "frontend" },
-  { name: "TypeScript", level: 42, category: "frontend" },
-  { name: "Tailwind CSS", level: 80, category: "frontend" },
-  { name: "Next.js", level: 40, category: "frontend" },
+  { name: "HTML/CSS", level: 100, category: "frontend" },
+  { name: "JavaScript", level: 100, category: "frontend" },
+  { name: "React", level: 100, category: "frontend" },
+  { name: "Tailwind CSS", level: 100, category: "frontend" },
+  { name: "Next.js", level: 100, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 60, category: "backend" },
-  { name: "Java", level: 70, category: "backend" },
-  { name: "C", level: 60, category: "backend" },
-  { name: "Golang", level: 50, category: "backend" },
-  { name: "MySql", level: 90, category: "backend" },
+  { name: "Java", level: 100, category: "backend" },
+  { name: "C", level: 100, category: "backend" },
+  { name: "Golang", level: 100, category: "backend" },
+  { name: "MySql", level: 100, category: "backend" },
 
   // ferramentas
-  { name: "Git/GitHub", level: 90, category: "ferramentas" },
-  { name: "Docker", level: 20, category: "ferramentas" },
-  { name: "Figma", level: 50, category: "ferramentas" },
-  { name: "VS Code", level: 95, category: "ferramentas" },
+  { name: "Git/GitHub", level: 100, category: "ferramentas" },
+  { name: "Docker", level: 100, category: "ferramentas" },
+  { name: "VS Code", level: 100, category: "ferramentas" },
 ];
 
 const categories = ["tudo", "frontend", "backend", "ferramentas"];
@@ -73,9 +70,9 @@ export const Competencias = () => {
               </div>
 
               <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
+                {/* <span className="text-sm text-muted-foreground">
                   {skill.level}%
-                </span>
+                </span> */}
               </div>
             </div>
           ))}

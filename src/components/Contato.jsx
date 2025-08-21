@@ -5,8 +5,6 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitch,
-  Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -96,14 +94,8 @@ export const Contato = () => {
                 <a href="https://www.linkedin.com/in/cairê-b-7b041026a" target="_blank">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
-                </a>
                 <a href="https://www.instagram.com/little._.bla" target="_blank">
                   <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
                 </a>
               </div>
             </div>
